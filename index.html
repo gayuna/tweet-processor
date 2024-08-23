@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tweet Processor</title>
+</head>
+<body>
+    <h1>Upload Tweet Files</h1>
+    <input type="file" id="fileInput" multiple onchange="displaySelectedFiles()"><br><br>
+    <div id="fileList"></div> <!-- 파일 이름을 표시할 영역 -->
+    <br>
+    <button onclick="readFiles()">Read Files</button><br><br>
+    <input type="text" id="tweetIdInput" placeholder="Enter Tweet ID" disabled>
+    <button onclick="processTweet()" disabled>Process Tweet</button>
+    <script src="app.js"></script>
+</body>
+</html>

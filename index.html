@@ -7,6 +7,14 @@
 </head>
 <body>
     <h1>Upload Tweet Files</h1>
+    
+    <!-- 안내문 추가 -->
+    <ol>
+        <li>Choose files를 눌러 아카이브의 data 아래에 있는 'tweets.js', 'tweets-part1.js', 'tweets-part2.js',... 등을 선택합니다. 여러명의 아카이브를 합치기 위해 이름을 변경해도 상관 없습니다. 원래 tweets 시리즈였던 것만 확인해주세요.</li>
+        <li>Read Files를 눌러 파일을 읽습니다. 파일 수가 많고 사이즈가 클수록 조금 기다려야 합니다. 성공 메세지(Files have been read successfully!)가 뜨게 되어있습니다.</li>
+        <li>여기까지 완료되었다면 타래의 맨 마지막 트윗의 id를 text 칸에 넣고 Process Tweet 버튼을 눌러 백업본을 다운로드 합니다.</li>
+    </ol>
+
     <input type="file" id="fileInput" multiple onchange="displaySelectedFiles()"><br><br>
     <div id="fileList"></div> <!-- 파일 이름을 표시할 영역 -->
     <br>

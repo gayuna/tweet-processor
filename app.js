@@ -94,14 +94,24 @@ function processTweet() {
         return;
     }
 
-    const tweetChainText = createTextChain(allTweets, tweetIdInput);
+    // 정규식을 사용하여 트윗 ID 추출
+    const regex = /(?:https?:\/\/(?:twitter\.com|x\.com)\/[^\/]+\/status\/)?(\d+)/;
+    const match = tweetIdInput.match(regex);
+
+    if (!match) {
+        alert("Invalid input. Please enter a valid tweet ID or URL.");
+        return;
+    }
+
+    const tweetId = match[1]; // 트윗 ID만 추출
+    const tweetChainText = createTextChain(allTweets, tweetId);
 
     const blob = new Blob([tweetChainText], { type: 'text/plain' });
     const url = window.URL.createObjectURL(blob);
     const a = document.createElement('a');
     a.style.display = 'none';
     a.href = url;
-    a.download = `${tweetIdInput}.txt`;
+    a.download = `${tweetId}.txt`;
     document.body.appendChild(a);
     a.click();
     window.URL.revokeObjectURL(url);

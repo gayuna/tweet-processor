@@ -1,20 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tweet Processor</title>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7211767616380178"
-     crossorigin="anonymous"></script>
+        crossorigin="anonymous"></script>
 </head>
+
 <body>
     <h1>트위터 타래 백업기</h1>
-    
+
     <!-- 안내문 추가 -->
     <ol>
-        <li>Choose files를 눌러 아카이브의 data 아래에 있는 'tweets.js', 'tweets-part1.js', 'tweets-part2.js',... 등을 선택합니다. 여러명의 아카이브를 합치기 위해 이름을 변경해도 상관 없습니다. 원래 tweets 시리즈였던 것만 확인해주세요.</li>
-        <li>Read Files를 눌러 파일을 읽습니다. 파일 수가 많고 사이즈가 클수록 조금 기다려야 합니다. 성공 메세지(Files have been read successfully!)가 뜨게 되어있습니다.</li>
-        <li>여기까지 완료되었다면 타래의 맨 마지막 트윗의 id를 text 칸에 넣고 Process Tweet 버튼을 눌러 백업본을 다운로드 합니다.</li>
+        <li>Choose files를 눌러 아카이브의 data 아래에 있는 'tweets.js', 'tweets-part1.js', 'tweets-part2.js',... 등을 선택합니다. 여러명의
+            아카이브를 합치기 위해 이름을 변경해도 상관 없습니다. 원래 tweets 시리즈였던 것만 확인해주세요.</li>
+        <li>Read Files를 눌러 파일을 읽습니다. 파일 수가 많고 사이즈가 클수록 조금 기다려야 합니다. 성공 메세지(Files have been read successfully!)가 뜨게
+            되어있습니다.</li>
+        <li>여기까지 완료되었다면 타래의 맨 마지막 트윗의 url혹은 id를 text 칸에 넣고 Process Tweet 버튼을 눌러 백업본을 다운로드 합니다.</li>
     </ol>
 
     <input type="file" id="fileInput" multiple onchange="displaySelectedFiles()"><br><br>
@@ -24,29 +28,25 @@
     <input type="text" id="tweetIdInput" placeholder="Enter Tweet ID" disabled>
     <button onclick="processTweet()" disabled>Process Tweet</button>
     <script src="app.js"></script><br><br>
-    <ins class="kakao_ad_area" style="display:none;"
-data-ad-unit = "DAN-uU85Wvozlrd5ofoR"
-data-ad-width = "320"
-data-ad-height = "50"></ins>
-<script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
-<br>
+    <ins class="kakao_ad_area" style="display:none;" data-ad-unit="DAN-uU85Wvozlrd5ofoR" data-ad-width="320"
+        data-ad-height="50"></ins>
+    <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
+    <br>
     <ul>
         <li><a href="https://www.postype.com/@maracottoncandy/post/17461853">질문 및 피드백은 포스타입 댓글로</a></li>
     </ul>
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7211767616380178"
-     crossorigin="anonymous"></script>
-<!-- adunit -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-7211767616380178"
-     data-ad-slot="5084276149"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7211767616380178"
+        crossorigin="anonymous"></script>
+    <!-- adunit -->
+    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-7211767616380178" data-ad-slot="5084276149"
+        data-ad-format="auto" data-full-width-responsive="true"></ins>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
     <ul>
+        <li>12.Mar.2025 Input으로 url도 받도록 변경</li>
         <li>23.Aug.2024 최초 버전 생성</li>
     </ul>
 </body>
+
 </html>
